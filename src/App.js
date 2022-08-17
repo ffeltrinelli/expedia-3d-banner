@@ -11,7 +11,7 @@ const STAR_DELAY = 3000
 
 function App() {
   return (
-    <Canvas camera={{ position: CAMERA_POSITION }}>
+    <Canvas camera={{ position: CAMERA_POSITION }} dpr={[1, 2]}>
       <pointLight position={CAMERA_POSITION} />
       <AnimatedText text={TITLE} size={1.5} color={EXPEDIA_BLUE} startPosition={[-100, 1, 0]}/>
       <AnimatedText text={SUBTITLE} size={1} color={EXPEDIA_BLUE} startPosition={[100, -1, 0]}/>

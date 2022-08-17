@@ -32,8 +32,8 @@ function AnimatedStar({points = 5, radius = 2,
     return (
         <animated.mesh position={position} rotation={rotation}>
             <extrudeGeometry args={[shape, extrudeSettings]} />
-            <meshStandardMaterial attach="material-0" color={color}/>
-            <meshStandardMaterial attach="material-1" color={borderColor}/>
+            <meshStandardMaterial attachArray="material" color={color}/>
+            <meshStandardMaterial attachArray="material" color={borderColor}/>
         </animated.mesh>
   )
 }
